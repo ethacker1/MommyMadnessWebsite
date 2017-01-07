@@ -1,0 +1,371 @@
+body {
+    background-color: lemonchiffon;
+    color: lightblue;
+    margin:0;
+    padding: 0;
+}
+
+header {
+    background-color: lightblue;
+    margin: 0;
+    padding: 5px 0;
+}
+header h1 {
+    color: cadetblue;
+    display: inline;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5px 15px;
+
+}
+
+.navMenu{
+    display: inline;
+    margin: 0;
+}
+.navMenu .parentMenu {
+    background-color: lightblue;
+    color: honeydew;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 10000
+    /*animation: slide 2.5s 1s ease;*/
+}
+.navMenu .parentMenu:hover {
+    background-color: lightsteelblue;
+}
+.navMenu .parentMenu a{
+    color: azure;
+    text-decoration: none;
+}
+.navMenu .parentMenu .sub-menu {
+    display: none;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 28px;
+    width: 180px;
+}
+.navMenu .parentMenu:hover .sub-menu{
+    display: block;
+    white-space: nowrap;
+}
+.navMenu .parentMenu:hover .sub-menu li{
+    padding: 4%;
+    background-color: lightsteelblue;
+    color: honeydew;
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 10000;
+}
+.navMenu .parentMenu .sub-menu li:hover {
+    background-color: cornflowerblue;
+}
+
+.section {
+    background-color: #ffe7bb;
+    border: thin solid lightgrey;
+    border-radius: 10px;
+    box-shadow: lightgray;
+    color: dimgray;
+    display: inline;
+    float: left;
+    margin: 0 1% 1% 1%;
+    padding: 5px 8px;
+    width: 63%;
+}
+.section h2{
+    border-bottom: solid medium lightseagreen;
+    color: lightseagreen;
+    text-align: center;
+}
+
+#about {
+    float: right;
+    font-size: medium;
+    margin: 1% 1% 0 1%;
+    text-align: center;
+    width: 30%;
+}
+
+#home {
+    margin: 1% 0 1% 1%;
+}
+
+#fdnav {
+    margin: 0;
+    padding: 0;
+}
+.fdNavMenu{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.fdNavMenu .parentMenu {
+    background-color: darkturquoise;
+    color: aliceblue;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 1px;
+    position: relative;
+    width: 88px;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+}
+.fdNavMenu .parentMenu:hover{
+    background-color: deepskyblue;
+}
+.fdNavMenu .parentMenu .sub-menu {
+    color: aliceblue;
+    display: none;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 27px;
+    width: 90px;
+    z-index: 2;
+}
+.fdNavMenu .parentMenu:hover .sub-menu {
+    display: inline;
+}
+.fdNavMenu .parentMenu .sub-menu li{
+    padding: 5px;
+    background-color: deepskyblue;
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+.fdNavMenu .parentMenu .sub-menu li:hover{
+    background-color: skyblue;
+}
+
+.stations {
+    color: dimgrey;
+    margin: 0;
+    cursor: pointer;
+    text-align: left;
+}
+
+.stationChecklist{
+    font-size: larger;
+    list-style-type: none;
+}
+.momMain, .mainBag{
+    color: darkorchid;
+    float: left;
+    position: relative;
+    width: 33%;
+}
+.dadMain, .quick{
+    color: darkcyan;
+    float: right;
+    position: relative;
+    width: 33%;
+}
+.babyMain, .carBag{
+    color: darkseagreen;
+    display: inline-block;
+    position: relative;
+    width: 32%;
+}
+.momMain .momList, .dadList, .babyList, .otherList, .bagList, .quickList, .carList {
+    color: lightslategrey;
+    font-size: medium;
+    list-style-type: circle;
+}
+
+#aboutSHB {
+    float: right;
+    font-size: medium;
+    margin: 1% 1% 0 3%;
+    position: absolute;
+    text-align: center;
+    width: 30%;
+}
+
+.hide {
+    display: none;
+}
+
+.slideWrapper {
+    width: 97%;
+    transform: translate3d(0,0,0);
+    white-space: nowrap;
+    text-align: center;
+}
+.slideWrapper .fdSlide {
+    float: left;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    display: none;
+    padding: 5px;
+    text-align: center;
+}
+#slideOne {
+    background-color: mintcream;
+}
+#slideTwo{
+    background-color: rgba(144,238,144, .5);
+}
+#slideThree {
+    background-color: palegreen;
+}
+#slideFour{
+    background-color: rgba(0,255,127, .5);
+}
+#slideFive{
+    background-color: rgba(113, 234, 245, 0.5);
+}
+.fdNavButton{
+    color: beige;
+    background-color: darkgray;
+}
+#fdNavLinks{
+    width: 100%;
+    text-align: center;
+}
+.slideNav{
+    display: inline;
+    width:100%;
+    text-align: center;
+}
+
+.gNav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.gNav .gNavMenu {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: .5%;
+    position: relative;
+    font-size: medium;
+    z-index: 2;
+    white-space: nowrap;
+}
+.gNav .gNavMenu a {
+    text-decoration: none;
+    color: honeydew;
+}
+.gNav .gNavMenu li:hover{
+    background-color: lightgray;
+}
+.gNav .gNavMenu li{
+    margin: .2%;
+    color: honeydew;
+    background-color: mediumaquamarine;
+    padding: .5%;
+    display: inline-block;
+    cursor: pointer;
+}
+.guidelines {
+    list-style-type: none;
+    text-align: center;
+}
+.guidelinesList{
+    display: inline;
+    color: aliceblue;
+    background-color: darkgray;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    cursor: pointer;
+}
+.monthGuidelines{
+    display: none;
+    background-color: plum;
+    width: 100%;
+}
+
+.mNav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+.mNav .mNavMenu{
+    display: inline;
+    margin: 0;
+    padding: .5%;
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+}
+.mNav .mNavMenu a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.mNav .mNavMenu li:hover {
+    background-color: plum;
+}
+.mNav .mNavMenu li{
+    margin: .2%;
+    color: whitesmoke;
+    background-color: orchid;
+    padding: .5%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.contentWrapper{
+    height: 300px;
+}
+.section .contentWrapper .Content{
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: plum;
+}
+
+.milestones {
+    list-style-type: none;
+    text-align: center;
+}
+.milestonesList{
+    display: inline;
+    color: aliceblue;
+    background-color: darkgray;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    cursor: pointer;
+}
+.monthMilestones{
+    display: none;
+    background-color: plum;
+    width: 100%;
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+}
+.nav li{
+    padding: 1%;
+    text-align: left;
+    font-size: large;
+}
+.nav a{
+    text-decoration: none;
+    color: darkgrey;
+}
